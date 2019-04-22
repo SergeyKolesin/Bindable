@@ -21,6 +21,8 @@
 		FE272E13226DE6810056873A /* NextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE272E0F226DE6800056873A /* NextCell.swift */; };
 		FE272E14226DE6810056873A /* NextCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE272E10226DE6810056873A /* NextCellViewModel.swift */; };
 		FE272E16226DE78B0056873A /* Bindable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE272DE0226DE43F0056873A /* Bindable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE272E1B226DF9C00056873A /* FirstScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE272E1A226DF9C00056873A /* FirstScreen.storyboard */; };
+		FE272E1D226E006A0056873A /* TableViewScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE272E1C226E006A0056873A /* TableViewScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		FE272E0E226DE6800056873A /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		FE272E0F226DE6800056873A /* NextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextCell.swift; sourceTree = "<group>"; };
 		FE272E10226DE6810056873A /* NextCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextCellViewModel.swift; sourceTree = "<group>"; };
+		FE272E1A226DF9C00056873A /* FirstScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstScreen.storyboard; sourceTree = "<group>"; };
+		FE272E1C226E006A0056873A /* TableViewScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 			children = (
 				FE272E0A226DE6550056873A /* ViewModel.swift */,
 				FE272E08226DE64E0056873A /* ViewController.swift */,
+				FE272E1A226DF9C00056873A /* FirstScreen.storyboard */,
 			);
 			path = FirstScreen;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 				FE272E10226DE6810056873A /* NextCellViewModel.swift */,
 				FE272E0E226DE6800056873A /* NextViewController.swift */,
 				FE272E0D226DE6800056873A /* NextViewModel.swift */,
+				FE272E1C226E006A0056873A /* TableViewScreen.storyboard */,
 			);
 			path = TableViewScreen;
 			sourceTree = "<group>";
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE272E06226DE61F0056873A /* Main.storyboard in Resources */,
+				FE272E1B226DF9C00056873A /* FirstScreen.storyboard in Resources */,
 				FE272DFE226DE5030056873A /* LaunchScreen.storyboard in Resources */,
+				FE272E1D226E006A0056873A /* TableViewScreen.storyboard in Resources */,
 				FE272DFB226DE5030056873A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ import Bindable
 
 class NextViewController: UIViewController {
 
-    var viewModel: Bindable<NextViewModel>!
+    var viewModel: Bindable<NextViewModel>! = Bindable(NextViewModel())
 
     @IBOutlet weak var tableView: UITableView!
 

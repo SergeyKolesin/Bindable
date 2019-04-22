@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="90W-Or-m4F">
+            <objects>
+                <navigationController storyboardIdentifier="FirstScreenNavVC" id="KJp-LT-LtF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="First" id="Azb-VA-rLz"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dcm-m7-kJS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zWf-Bg-kBV" kind="relationship" relationship="rootViewController" id="BBg-fi-aFX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tYn-V1-J9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-969" y="-672"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lI8-wR-OZg">
+            <objects>
+                <viewController id="zWf-Bg-kBV" customClass="ViewController" customModule="Examle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pvG-6d-sfg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnw-7J-3Va">
+                                <rect key="frame" x="164.5" y="326" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressButton:" destination="zWf-Bg-kBV" eventType="touchUpInside" id="BJ8-Cc-1gm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TO3-K6-I79">
+                                <rect key="frame" x="166.5" y="134" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aq-Z6-ccH">
+                                <rect key="frame" x="166.5" y="173" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPp-AU-AF1">
+                                <rect key="frame" x="144" y="363.5" width="87" height="30"/>
+                                <state key="normal" title="Change Title"/>
+                                <connections>
+                                    <action selector="changeTitle:" destination="zWf-Bg-kBV" eventType="touchUpInside" id="iI5-em-0IB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJC-2N-Dwo">
+                                <rect key="frame" x="116.5" y="401.5" width="142" height="30"/>
+                                <state key="normal" title="Delete Second Label"/>
+                                <connections>
+                                    <action selector="deleteLabel:" destination="zWf-Bg-kBV" eventType="touchUpInside" id="Y5i-DZ-KVR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fay-j1-8yy">
+                                <rect key="frame" x="145" y="445.5" width="85" height="30"/>
+                                <state key="normal" title="Bind/Unbind"/>
+                                <connections>
+                                    <action selector="pressBindButton:" destination="zWf-Bg-kBV" eventType="touchUpInside" id="OQO-Vv-kgL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TO3-K6-I79" firstAttribute="top" secondItem="KW8-cu-qDw" secondAttribute="top" constant="70" id="3Bc-zO-vpi"/>
+                            <constraint firstItem="IJC-2N-Dwo" firstAttribute="centerX" secondItem="KW8-cu-qDw" secondAttribute="centerX" id="3gf-oo-kso"/>
+                            <constraint firstItem="TO3-K6-I79" firstAttribute="centerX" secondItem="KW8-cu-qDw" secondAttribute="centerX" id="6CE-Gj-eue"/>
+                            <constraint firstItem="0aq-Z6-ccH" firstAttribute="centerX" secondItem="KW8-cu-qDw" secondAttribute="centerX" id="6XG-X7-TBj"/>
+                            <constraint firstItem="mnw-7J-3Va" firstAttribute="centerX" secondItem="KW8-cu-qDw" secondAttribute="centerX" id="7jM-PH-lFC"/>
+                            <constraint firstItem="sPp-AU-AF1" firstAttribute="centerX" secondItem="KW8-cu-qDw" secondAttribute="centerX" id="PYP-AW-Hrh"/>
+                            <constraint firstItem="0aq-Z6-ccH" firstAttribute="top" secondItem="TO3-K6-I79" secondAttribute="bottom" constant="18" id="SQg-np-6VA"/>
+                            <constraint firstItem="Fay-j1-8yy" firstAttribute="top" secondItem="IJC-2N-Dwo" secondAttribute="bottom" constant="14" id="Xo6-lg-xT2"/>
+                            <constraint firstItem="Fay-j1-8yy" firstAttribute="centerX" secondItem="KW8-cu-qDw" secondAttribute="centerX" id="cvY-wK-Rd9"/>
+                            <constraint firstItem="IJC-2N-Dwo" firstAttribute="top" secondItem="sPp-AU-AF1" secondAttribute="bottom" constant="8" id="erj-2K-6el"/>
+                            <constraint firstItem="mnw-7J-3Va" firstAttribute="centerY" secondItem="KW8-cu-qDw" secondAttribute="centerY" id="nAW-bc-xZ4"/>
+                            <constraint firstItem="sPp-AU-AF1" firstAttribute="top" secondItem="mnw-7J-3Va" secondAttribute="bottom" constant="7.5" id="qIA-k5-Jsc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KW8-cu-qDw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="P8a-9r-Ygb"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="label1" destination="TO3-K6-I79" id="ZWc-Ke-0nL"/>
+                        <outlet property="label2" destination="0aq-Z6-ccH" id="eJq-cY-csY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uI4-d9-e0K" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142" y="-672"/>
+        </scene>
+    </scenes>
+</document>

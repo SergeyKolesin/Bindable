@@ -11,7 +11,6 @@ import Bindable
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var screenTitle: UILabel!
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     var binded = false
@@ -24,13 +23,13 @@ class ViewController: UIViewController {
         bindUnbind()
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showNextViewController" {
-            if let vc = segue.destination as? NextViewController {
-                vc.viewModel = Bindable(NextViewModel())
-            }
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "showNextViewController" {
+//            if let vc = segue.destination as? NextViewController {
+//                vc.viewModel = Bindable(NextViewModel())
+//            }
+//        }
+//    }
 
     @IBAction func pressButton(_ sender: Any) {
         viewModel?.value.increaseCounter()
@@ -46,10 +45,6 @@ class ViewController: UIViewController {
     
     @IBAction func pressBindButton(_ sender: Any) {
         bindUnbind()
-    }
-
-    @IBAction func pressNextButton(_ sender: Any) {
-        performSegue(withIdentifier: "showNextViewController", sender: nil)
     }
 
     func configLabel1() {
